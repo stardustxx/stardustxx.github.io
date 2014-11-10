@@ -55,9 +55,7 @@ $(document).ready(function(){
    for (var i = 0; i < projects.children.length; i++){
         bindTaskEvent(projects.children[i], projectDetail.children[i], i);
    }
-});
-
-$(function(){ 
+    $(function(){ 
     if ($(window).width() > 768){
         skrollr.init(); 
         console.log("on desktop");
@@ -65,10 +63,13 @@ $(function(){
     
     $(window).on('resize', function () {
     if ($(window).width() <= 767) {
-      skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+        skrollr.init().destroy(); 
     }
     else {
         skrollr.init();   
     }
   });
 });
+});
+
+
