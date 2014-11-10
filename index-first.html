@@ -1,0 +1,182 @@
+<!doctype HTML>
+<html>
+<head>
+<title>stardustEric</title>    
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+<meta name="mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+<script type="text/javascript" src="bower_components/scrollr/src/skrollr.js"></script>
+<link rel="stylesheet" href="app-first.css" type="text/css">
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/font-roboto/roboto.html">
+<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+<link rel="import" href="bower_components/core-icon/core-icon.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
+<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
+
+
+    
+</head>
+<body unresolved layout vertical fullbleed>
+    <core-scroll-header-panel flex>
+<!--
+        <core-toolbar>
+            <core-icon-button icon="menu"></core-icon-button>
+            <div flex>
+                <span>Eric Lee</span>
+            </div>
+            <core-icon-button icon="search"></core-icon-button>
+        </core-toolbar>
+-->
+        
+        <div class = "content" id = "page-content">
+            <div id = "slides-container">
+                <div id = "slides"
+                     data-0 = "transform:translate(0%, -0%);"
+                     data-200p = ""
+                     data-300p = "transform:translate(0%, -50%);"
+                     data-500p = ""
+                     data-600p = "transform:translate(0%, -100%);"
+                     data-700p = ""
+                     data-800p = "transform:translate(0%, -150%);"
+                     data-1000p = ""
+                     data-1100p = "transform:translate(0%, -200%);"
+                     >
+                    <div id = "slide-1" class = "slide">
+                        <div class = "welcome">
+                            <div id = "heading"
+                                 data-0p = "opacity: 1; transform:translate(0px, 0px);"
+                                 data-20p = "opacity: 0; transform:translate(0px, -100%)"
+                                 data-anchor-target="#helper"
+                                 >
+                                <h1>Welcome</h1>
+                                <h2>This is Eric Lee's Portfolio</h2>
+                            </div>
+                        </div>
+                        
+                        <div id = "content2">
+                            <div>
+                                <h1 data-30p = "opacity: 0; transform:translate(0px, -80%);"
+                                    data-45p = "opacity: 1; transform:translate(0px, 0px);"
+                                    data-anchor-target="#helper">Eric Lee</h1>
+                                <h2 data-30p = "opacity: 0; transform:translate(0px, -150%);"
+                                    data-45p = "opacity: 1; transform:translate(0px, 0px);"
+                                    data-anchor-target="#helper">Simplelistic and Innovation</h2>
+                            </div>
+                            
+                            <div id = "about">
+                                <ul>
+                                    <li 
+                                        data-30p = "opacity: 0; transform:translate(0px, -30%);"
+                                        data-60p = "opacity: 1; transform:translate(0px, 0px);"
+                                        data-200p = ""
+                                        data-250p = "opacity: 0; transform:translate(0px, 30%);"
+                                        data-anchor-target="#helper"
+                                        >Pursuing Mechatronics at SFU</li>
+                                    <li
+                                        data-30p = "opacity: 0; transform:translate(0px, -30%);"
+                                        data-60p = "opacity: 1; transform:translate(0px, 0px);"
+                                        data-200p = ""
+                                        data-250p = "opacity: 0; transform:translate(0px, 30%);"
+                                        data-anchor-target="#helper"
+                                        >Loving Web Design</li>
+                                </ul>
+                            </div>
+                            
+                            <img src="image/bracket.png" 
+                                    data-30p = "opacity: 0; transform:translate(10%, 0px);"
+                                    data-50p = "opacity: 1; transform:translate(0px, 0px);"
+                                    data-230p = ""
+                                    data-250p = "opacity: 0; transform:translate(0px, -10%);"
+                                    data-anchor-target="#helper">
+                        </div>
+                    </div>
+                    <div id = "slide-2" class = "slide">
+                        <div id = "content3">
+                            <img src="image/instream.png" 
+                                    data-290p = "opacity: 0; transform:translate(0px, 20%);"
+                                    data-330p = "opacity: 1; transform:translate(0px, 0px);"
+                                    data-500p = ""
+                                    data-620p = "opacity: 0; transform:translate(0px, -10%);"
+                                    data-anchor-target="#helper"><img>
+                            
+                            <h1     data-290p = "opacity: 0; transform:translate(0px, 20%);"
+                                    data-330p = "opacity: 1; transform:translate(0px, 0px);"
+                                    data-500p = ""
+                                    data-620p = "opacity: 0; transform:translate(0px, -10px);"
+                                    data-anchor-target="#helper">InStream</h1>
+                            
+                            <div id = "words" 
+                                        data-290p = "opacity: 0; transform:translate(0px, 10%);"
+                                        data-330p = "opacity: 1; transform:translate(0px, 0px);"
+                                        data-500p = ""
+                                        data-620p = "opacity: 0; transform:translate(0px, -10%);"
+                                        data-anchor-target="#helper">
+                                <p>     A project we created to compete in Vancouver UX Competition 2014
+                                        <br><br>
+                                        Grabbing Instagram photos in response to what the users search
+                                </p>
+                                    <h2>Ingredient:</h2>
+                                        <br>
+                                <ul>
+                                    <li>Polymer</li>
+                                    <li>JavaScript</li>
+                                    <li>AJAX</li>
+                                    <li>PHP</li>
+                                </ul>
+                                <paper-button raised>
+                                        Learn More
+                                </paper-button>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div id = "slide-3" class = "slide">
+
+                    </div>
+                    <div id = "slide-4" class = "slide">
+
+                    </div>
+                    <div id = "slide-5" class = "slide">
+
+                    </div>
+                </div>
+            </div>
+            
+            <div id = "helper">
+                <div class = "marker red"></div>
+                <div class = "marker green"></div>
+                <div class = "marker blue"></div>
+                <div class = "marker yellow"></div>
+                <div class = "marker black"></div>
+            </div>
+            
+            
+<!--
+            <ul>
+                <li><h2>Show welcome page and introduction with a coding stuff as the background</h2></li>
+                <li><h2>Show my project of InStream</h2></li>
+                <li><h2>Show missbehua.ca</h2></li>
+                <li><h2>Show the order.missbehua.com</h2></li>
+                <li><h2>Show maybe my hobbit or personal goal or personal growth, direction</h2></li>
+                <li><h2>Would like to do this using parallel responsive layout while using Polymer and have material design taste</h2></li>
+            </ul>
+-->
+        </div>
+        
+    </core-scroll-header-panel>
+    
+    
+        
+<script type="text/javascript">
+    var s = skrollr.init();
+</script>
+</body>
+
+</html>

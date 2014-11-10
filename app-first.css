@@ -1,0 +1,212 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+#slides-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slides {
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+
+#slide-1 {
+    background-size: cover;
+}
+
+#slide-2 {
+    background-size: cover;
+    -webkit-transform: translate(0,100%);
+    -ms-transform: translate(0,100%);
+    transform: translate(0,100%);
+}
+
+#slide-3 {
+    background-size: cover;
+    -webkit-transform: translate(0,200%);
+    -ms-transform: translate(0,200%);
+    transform: translate(0,200%);
+}
+
+#slide-4 {
+    background-size: cover;
+    -webkit-transform: translate(0,300%);
+    -ms-transform: translate(0,300%);
+    transform: translate(0,300%);
+}
+
+#slide-5 {
+    background-size: cover;
+    -webkit-transform: translate(0,400%);
+    -ms-transform: translate(0,400%);
+    transform: translate(0,400%);
+}
+
+#slide-6 {
+    background-size: cover;
+    -webkit-transform: translate(0,500%);
+    -ms-transform: translate(0,500%);
+    transform: translate(0,500%);
+}
+
+.caption {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-align: right;
+    color: #000;
+}
+
+.caption p, .caption h1 {
+    margin: 0;   
+}
+
+.caption h1 {
+    margin-bottom: 0.2em;   
+}
+
+.caption p {
+    line-height: 1.333em;   
+}
+
+#helper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1000%;
+    width: 20px;
+    visibility: hidden;
+}
+
+core-scroll-header-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #eee;
+}
+
+core-toolbar {
+    height: 100%;   
+    background-color: #4285f4;
+    color: #f1f1f1;
+    fill: #f1f1f1;
+}
+
+#heading {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 25%;
+    font-size: 80%;
+    color: black;
+}
+
+#heading h1 {
+    position: absolute;
+    font-size: 72px; 
+}
+
+#heading h2 {
+    position: absolute;
+    top: 100px;
+    font-size: 40px;
+}
+
+#content2 {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 150px;
+}
+
+#content2 h1 {
+    position: absolute;
+    font-size: 70px;
+}
+
+#content2 h2 {
+    position: absolute;
+    top: 100px;
+    font-size: 40px;
+}
+
+#content2 img {
+    position: absolute;
+    width: 70%;
+    right: -200px;
+}
+
+#list, #about {
+    position: absolute;
+    top: 200px;
+    left: -50px;
+}
+
+#list li, #about li {
+    list-style-type: none;
+    margin: 10px;
+    font-size: 40px;
+}
+
+#content3 img {
+    position: absolute;
+    width: 60%;
+    top: 30px;
+}
+
+#content3 h1 {
+    position: absolute;
+    left: 62%;
+    top: 20px;
+}
+
+#content3 #words {
+    position: absolute;
+    display: block;
+    width: 550px;
+    left: 62%;
+    top: 80px;
+    font-size: 30px;
+}
+
+#content3 h2 {
+    position: absolute;
+    font-size: 30px;
+    top: 220px;
+}
+
+#content3 ul li {
+    list-style-type: none;
+    margin-top: 20px;   
+}
