@@ -1,0 +1,93 @@
+.tbCenter {
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    font-family: 'Roboto 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: #f1f1f1;
+}
+
+
+.container-fluid {
+    padding: 1rem;
+}
+
+/*
+.iitem {
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.titem {
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid;
+}
+*/
+
+.item {
+    margin: 1rem;
+    padding: 0.5rem;
+    float: left;
+    height: auto;
+/*    box-shadow: 5px 5px 5px #888888;*/
+}
+
+.item img {
+    width: 19.5rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.item .content {
+    display: none;
+}
+
+.expand {
+    margin: 1rem;
+    padding: 0.5rem;
+    float: left;
+    height: auto;
+}
+
+.expand img {
+    width: 50rem;
+    height: auto;
+    overflow: scroll;
+}
+
+.expand .content {
+    display: inline;
+}
+
+#beaker {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mainHeader {
+    background-color: #00C688;
+}
+
+core-header-panel {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; 
+}
+
+@media (max-width: 500px){
+    .item img {
+        width: 35vw;
+        height: auto;
+        overflow: hidden;
+    }   
+}
+
+@media (max-width: 400px){
+    #logo {
+        display: none;   
+    }
+}
