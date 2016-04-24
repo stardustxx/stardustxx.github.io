@@ -1,267 +1,124 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>stardustEric</title>    
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="stylesheet" href="jquery-ui-1.11.2.custom/jquery-ui.css">
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<script type="text/javascript" src="bower_components/scrollr/src/skrollr.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery-ui-1.11.2.custom/jquery-ui.js"></script>
-<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="app.css" type="text/css">
-<link rel="stylesheet" href="mobile.css" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" ; charset="utf-8">
+  <title>sDust Portfolio</title>
 
+  <link rel=" stylesheet " href="css/tether.min.css ">
+  <link rel="stylesheet " href="css/bootstrap.min.css ">
+  <link rel="stylesheet " href="css/main.css ">
 </head>
+
 <body>
-<div class = "content" id = "page-content">
-    <div id = "slides-container">
-        <div id = "slides"
-             data-0 = "transform:translate(0%, -0%);"
-             data-100p = "transform:translate(0%, -50%);"
-             data-200p = "transform:translate(0%, -100%);"
-             data-300p = "transform:translate(0%, -150%);"
-             >
-            <div id = "slide-1" class = "slide">
-                <div class = "welcome">
-                    <div id = "heading">
-                        <h1>Welcome</h1>
-                        <h2>Enjoy Eric Lee's Portfolio</h2>
-                    </div>
-                </div>
+  <div class="portfolio ">
+    <nav class="navbar navbar-fixed-top navbar-light bg-faded ">
+      <a class="navbar-brand " href="# ">sDust</a>
+    </nav>
 
-            </div>
-            <div id = "slide-2" class = "slide">
-                <div id = "content2">
-                    <div id = "title1">
-                        <h1>About Me</h1>
-                        <h2>Simplelistic and Innovation</h2>
-                    </div>
-
-                    <div id = "about">
-                        Pursuing Mechatronics at SFU but having great passion in web developing, especially <br>
-                        when I see things flying around when presenting info to users <br><br>
-                        Hopefully I can change the world with web <br><br>
-                        Experience Level:
-                        <ul id = "skill">
-                            <li>JavaScript
-                                <div id = "proJS"></div>
-                            </li>
-                            <li>Polymer
-                                <div id = "proP"></div>
-                            </li>
-                            <li>Design
-                                <div id = "proD"></div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <img src="image/bracket.png">
-                </div>
-            </div>
-            <div id = "slide-3" class = "slide">
-                <div id = "content3">
-                    <h1 id = "projectTitle">My Projects</h1>
-
-                    <div id = "projectList">
-                        <div id = "project1" class = "projects">
-                            <paper-shadow z = "1"></paper-shadow>
-                            <figure>
-                                <img src="image/instream-banner.png"><img>
-                                <figcaption>
-                                    <h3>InStream</h3>
-                                    <p>Grab Instagram photos in response to user's search and <br> 
-                                       display in a beautiful polymer grid layout</p>
-                                </figcaption>
-                            </figure>
-
-                        </div>
-                        <div id = "project2" class = "projects">
-                            <paper-shadow z = "1"></paper-shadow>
-                            <figure>
-                                <img src="image/missbehuaca-banner.png"><img>
-                                <figcaption>
-                                    <h3>MissBehuaCa</h3>
-                                    <p>An e-commerce website made using WordPress and PHP</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div id = "project3" class = "projects">
-                            <paper-shadow z = "1"></paper-shadow>
-                            <figure>
-                                <img src="image/missbehua-banner.png"><img>
-                                <figcaption>
-                                    <h3>Ordering System</h3>
-                                    <p>An online ordering system and platform between HQ and distributors</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>  
-
-                <button type="button" class= "btn btn-primary disappear" id ="backButton">
-                    <span class = "glyphicon glyphicon-chevron-left"></span>
-                </button>
-
-                <div id = "projectDetails">
-                    <div class = "disappear projectDetail" id = "instreamDetail">
-
-                        <div id = "instreampic">
-                            <img src="image/instream.png"><img>
-                        </div>
-                        <div class = "detail">
-                            InStream was a side-project created by my friend and I for entering Vancouver UX Competition 2014. The core feature is for the users to search for popular keywords or popular events and InStream will grab the Instagram feeds that are tagged by those keywords and present these photos in photo wall grid-like layout. We used AJAX to communicate with Instagram API to acquire the JSON file. Having wanted to try different technology, we implemented Polymer, which makes everything into component for the ease of adding desired objects. This included the topbar that stays on the top for people to access quickly; the shadow to make the photos become the main subject rather than blending into the background. Also, knowing many people use mobile devices, we have also optimize our website to be mobile compatible. I am mostly in charge of the front end using jQuery and Polymer and to present the easiest user interface and gives the best user experience. <br><br>
-                            Project Dates: October 2014 <br><br>
-                            Website: <a target="_blank" href="http://piwangonthecloud.entrydns.org/instream/">InStream</a>
-                        </div>
-                    </div>
-
-                    <div class = "disappear projectDetail" id = "missbehuacaDetail">
-                        <div id = "missbehuacapic">
-                            <img src="image/missbehuaca.png"><img>
-                        </div>
-                        <div class = "detail">
-                            Using WordPress, this project was able to be set up swiftly and implemented pages and products very quickly without writing too much codes. I applied child theme so whenever the theme get updated in the future, my preferences will not be lost. Having the idea of homepage being the door and the first impression to the customers, making designing for the homepage becomes crucial to catch customers' attentions. I have put 80% of my effort into making my homepage to look colorful but yet simple. The homepage contained not only the categories of the product but also the photos from Instagram feeds. Moreover, by using PHP, I could tweak the downloaded plugins to perform the way I would like it to be. <br><br>
-                            Project Dates: August 2014 ~ October 2014 <br><br>
-                            Website: <a target="_blank" href="http://missbehua.ca">http://missbehua.ca</a>
-                        </div>
-                    </div>
-
-                    <div class = "disappear projectDetail" id = "missbehuaDetail">
-                        <div id = "missbehuapic">
-                            <img src="image/missbehua.png"><img>
-                        </div>
-                        <div class = "detail">
-                            MissBehua is a beauty store that sells nail foils and they are in need of a way for the distributors to order products from them. Using PHP, we could set up a simple backend that included a database for storing browser sessions and users. By using Masonri JavaScript plugin, we could show all the images of products in a waterfall grid layout that was able to adjust itself depending screen sizes plus users could tap on the photo and see a bigger version through the implementation of LightBox. After users put the number in the text boxes at the bottom of every image, pressing submit button would email the order to the company. This was done through PHP which composed the email in HTML and it was able to send email using the email that already existed on the server since users weren't required to input their own emails. <br><br>
-                            Project Dates: June 2014 ~ August 2014 <br><br>
-                            Website: Not Available for Public
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id = "slide-4" class = "slide">
-                <div id = "content4">
-                    <h1>Know More About Me</h1>
-                    <div id = "checkResume">
-                        Here is my resume
-                        <div id = "paper">
-                            <a target="_blank" href="ResumeAI.pdf"><img src="image/paper.png"></a>
-                        </div>
-                    </div>
-                    <div id = "more">
-                        I hope you enjoy your stay and if you don't mind working with somebody that is both fun and hard-working (cough ME cough cough), contact me if you'd like. XD
-                    </div>
-                    <ul id = "social">
-                        <li><a target="_blank" href="https://www.linkedin.com/pub/eric-lee/29/881/59"><img src="image/linkedin.png"></a></li>
-                        <li><a target="_blank" href="https://github.com/stardustxx"><img src="image/github.png"></a></li>
-                        <li><a target="_blank" href="http://instagram.com/stardustss"><img src="image/instagram.png"></a></li>
-                        <li><a target="_blank" href="https://twitter.com/stardustEric"><img src="image/twitter.png"></a></li>
-                        <li><a target="_blank" href="mailto:tkl16@sfu.ca"><img src="image/email.png"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div class="stage-1 container ">
+      <div class="content display-3 ">
+        <h1>
+          Nothing is true Everything is permitted
+        </h1>
+        <p>
+          Create website and apps
+        </p>
+      </div>
     </div>
-</div>
-    
-<div id = "mobile">
-    <div class = "welcome">
-        <div id = "heading">
-            <h1>Welcome</h1>
-            <h2>Enjoy Eric Lee's Portfolio</h2>
-        </div>
-    </div>
-    
-    <div id = "content2">
-        <div id = "title1">
-            <h1>About Me</h1>
-            <h2>Simplelistic and Innovation</h2>
-        </div>
 
-        <div id = "about">
-            Pursuing Mechatronics at SFU but having great passion in web developing, especially <br>
-            when I see things flying around when presenting info to users <br><br>
-            Hopefully I can change the world with web <br><br>
-            Experience Level:
-            <ul id = "skill">
-                <li>JavaScript
-                    <div id = "progJS"></div>
-                </li>
-                <li>Polymer
-                    <div id = "progP"></div>
-                </li>
-                <li>Design
-                    <div id = "progD"></div>
-                </li>
-            </ul>
+    <div class="stage-2 container ">
+      <div class="row ">
+        <div class="image-container center-block ">
+          <img src="images/kungfupanda3.jpg " alt=" " class="img-circle " />
         </div>
+        <div class="content-container text-xs-center ">
+          <h5>My name is Eric L. and spend the time I have on web and mobile development. Mainly using <em>AngularJS 1 and 2</em> at Thrinacia team for web. Finished <em>Android Nanodegree</em> on Udacity and will pursue becoming a better Mobile and Web Developer. There is still a lot to do and no stopping in learning.</h5>
+        </div>
+        <div class="link-about-me ">
+          <a href="https://twitter.com/stardusteric " target="_blank "><img src="images/twitter.png " alt=" "></a>
+          <a href="https://ca.linkedin.com/in/stardusteric " target="_blank "><img src="images/linkedin.png " alt=" "></a>
+          <a href="mailto:sdusteric@gmail.com "><img src="images/email.png " alt=" "></a>
+        </div>
+      </div>
     </div>
-    <div id = "content3">
-        <h1 id = "content3Title">What I have done...</h1>  
 
-        <div id = "projectDetails">
-            <div class = "projectDetail" id = "instreamDetail">
-                <h1 class = "projectTitle">InStream</h1>
-                <div id = "instreampic" class = "projectPic">
-                    <img src="image/instream.png"><img>
-                </div>
-                <div class = "detailMobile">
-                    InStream was a side-project created by my friend and I for entering Vancouver UX Competition 2014. The core feature is for the users to search for popular keywords or popular events and InStream will grab the Instagram feeds that are tagged by those keywords and present these photos in photo wall grid-like layout. Having wanted to try different technology, we implemented Polymer that Google greatly embraced. Knowing many people use mobile devices, we have also optimized our website to be mobile compatible. I am mostly in charge of the front end using jQuery and Polymer and to present the easiest user interface and gives the best user experience. <br><br>
-                    Project Dates: October 2014 <br><br>
-                    Website: <a target="_blank" href="http://piwangonthecloud.entrydns.org/instream/">InStream</a>
-                </div>
+    <div class="stage-project-3 ">
+      <div class="project-3 ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-6 image ">
+              <img src="images/Hey.png " alt=" " class="center-block ">
             </div>
-            <hr>
-            <div class = "projectDetail" id = "missbehuacaDetail">
-                <h1 class = "projectTitle">MissBehua Canada</h1>
-                <div id = "missbehuacapic" class = "projectPic">
-                    <img src="image/missbehuaca.png"><img>
-                </div>
-                <div class = "detailMobile">
-                    Using WordPress, this project was able to be set up swiftly and implemented pages and products very quickly without writing too much codes. I applied child theme so whenever the theme get updated in the future, my preferences will not be lost. Having the idea of homepage being the door and the first impression to the customers, making designing for the homepage becomes crucial to catch customers' attentions. I have put 80% of my effort into making my homepage to look colorful but yet simple. The homepage contained not only the categories of the product but also the photos from Instagram feeds. Moreover, by using PHP, I could tweak the downloaded plugins to perform the way I would like it to be. <br><br>
-                    Project Dates: August 2014 ~ October 2014 <br><br>
-                    Website: <a target="_blank" href="http://missbehua.ca">MissBehuaCa</a>
-                </div>
+            <div class="col-lg-6 description ">
+              <h4>Hey</h4>
+              <h2>Remind people of what they need to do</h2>
+              <p class="lead ">
+                Hey focuses on setting up tasks between people. You can send a task to another user right now or at the designated time. This was my capstone project on Udacity Android Nanodegree and I will continue maintaining it to solve the problem where people forget
+                what they need to do after they were told.
+              </p>
+              <h5><em>
+                Technology: Android, Firebase, Content Provider, Loader, Material Design, Intent Service, Alarm Manager, Google Services
+              </em></h5>
             </div>
-            <hr>
-            <div class = "projectDetail" id = "missbehuaDetail">
-                <h1 class = "projectTitle">Ordering System</h1>
-                <div id = "missbehuapic" class = "projectPic">
-                    <img src="image/missbehua.png"><img>
-                </div>
-                <div class = "detailMobile">
-                    MissBehua is a beauty store that sells nail foils and they are in need of a way for the distributors to order products from them. Using PHP, we could set up a simple backend that included a database for storing browser sessions and users. By using Masonri JavaScript plugin, we could show all the images of products in a waterfall grid layout that was able to adjust itself. After users put the number in the text boxes at the bottom of every image, pressing submit button would email the order to the company. This was done through PHP which composed the email in HTML and it was able to send email using the email that already existed on the server since users weren't required to input their own emails. <br><br>
-                    Project Dates: June 2014 ~ August 2014 <br><br>
-                    Website: Not Available for Public
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div id = "content4">
-        <h1>Know More About Me</h1>
-        <div id = "checkResume">
-            Here is my resume
-            <div id = "paper">
-                <a target="_blank" href="ResumeAI.pdf"><img src="image/paper.png"></a>
+
+    <div class="stage-project-1 ">
+      <div class="project-1 ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-6 description ">
+              <h4>Chatter</h4>
+              <h2>
+                Share the images with people around you
+              </h2>
+              <p class="lead ">
+                The idea of Chatter is to allow you to upload images and only the people that are around you can see them. This app was built as one of the Android projects I created to learn more about the platform, API, and practices.
+              </p>
+              <h5><em>
+                Technology: Android, Facebook Parse, Material Design, Location Service, Camera
+              </em></h5>
+              <h6><em>Link: <a href="https://github.com/stardustxx/Chatter " target="_blank "><u>GitHub</u></a></em></h6>
             </div>
+            <div class="col-lg-6 image ">
+              <img src="images/Chatter.webp " alt=" " class="center-block ">
+            </div>
+          </div>
         </div>
-        <div id = "more">
-            I hope you enjoy your stay and if you don't mind working with somebody that is both fun and hard-working (cough ME cough cough), contact me if you'd like. XD
-        </div>
-        <ul id = "social">
-            <li><a target="_blank" href="https://www.linkedin.com/pub/eric-lee/29/881/59"><img src="image/linkedin.png"></a></li>
-            <li><a target="_blank" href="https://github.com/stardustxx"><img src="image/github.png"></a></li>
-            <li><a target="_blank" href="http://instagram.com/stardustss"><img src="image/instagram.png"></a></li>
-            <li><a target="_blank" href="https://twitter.com/stardustEric"><img src="image/twitter.png"></a></li>
-            <li><a target="_blank" href="mailto:tkl16@sfu.ca"><img src="image/email.png"></a></li>
-        </ul>
+      </div>
     </div>
-    
-</div>
-<script type="text/javascript" src="app.js"></script>
-<script type="text/javascript" src="mobile.js"></script>
+
+    <div class="stage-project-2 ">
+      <div class="project-2 ">
+        <div class="container ">
+          <div class="col-lg-12 ">
+            <div class="row image center-block ">
+              <img src="images/Chirpin.jpg " alt=" ">
+            </div>
+            <div class="row description center-block ">
+              <h4>Chirpin</h4>
+              <h2>Meet wonderful people</h2>
+              <p>
+                Chirpin was a website that would connect people and have conversation. It utilized Nodejs with Socket.io to achieve real time chatting experience. This was one of the first sites I built that included the server aspect and the frontend development.
+              </p>
+              <h5><em>
+                Technology: Nodejs, ExpressJS, JavaScript, jQuery, Socket.io, MongoDB
+              </em></h5>
+              <h6><em>Link: <a href="https://github.com/stardustxx/Chirpin " target="_blank "><u>GitHub</u></a></em></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript " src="js/jquery.min.js "></script>
+  <script type="text/javascript " src="js/tether.min.js "></script>
+  <script type="text/javascript " src="js/bootstrap.min.js "></script>
+
 </body>
 
 </html>

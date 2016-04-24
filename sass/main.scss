@@ -1,0 +1,124 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.top-bar {
+  img {
+    width: 20%;
+  }
+}
+
+.portfolio {
+  height: 100%;
+
+  .stage-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/stage-1.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    .content {
+      max-width: 20em;
+      margin: 0 auto;
+      color: white;
+      margin-top: 2em;
+      text-align: center;
+      h1 {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: 200;
+      }
+      p {
+        font-size: 0.5em;
+      }
+    }
+  }
+  .stage-2 {
+    padding: 4em;
+    .image-container {
+      max-width: 18em;
+      img {
+        width: 100%;
+      }
+    }
+    .content-container {
+      margin: 2em 0;
+      h5 {
+        line-height: 1.8;
+      }
+    }
+    .link-about-me {
+      text-align: center;
+      img {
+        padding: 4px;
+      }
+    }
+  }
+  .description {
+    a {
+      color: white;
+      &:hover {
+        color: white;
+      }
+      &:visited {
+        color: white;
+      }
+      &:active {
+        color: white;
+      }
+    }
+  }
+  .stage-project-1 {
+    background: #EF5350;
+    color: white;
+    padding: 4em 0;
+    .project-1 {
+      .image img {
+        width: 70%;
+      }
+    }
+    .description {
+      h2 {
+        font-weight: bold;
+      }
+    }
+  }
+  .stage-project-2 {
+    padding: 4em 0;
+    background: #009688;
+    color: white;
+    .project-2 {
+      .image {
+        margin-bottom: 24px;
+        max-width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .description {
+        h2 {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .stage-project-3 {
+    padding: 4em 0;
+    background: #03A9F4;
+    color: white;
+    .project-3 {
+      .image img {
+        width: 70%;
+      }
+      .description h2 {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.col-center {
+  margin: 0 auto;
+}

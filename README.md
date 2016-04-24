@@ -1,4 +1,0 @@
-Portfolio
-=========
-
-Eric's Portfolio
